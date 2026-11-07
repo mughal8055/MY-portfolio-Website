@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naseer Ahmad | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Naseer Ahmad, BS Computer Science student: web development, databases, mobile apps, networking and SAP ABAP.">
+  <meta name="theme-color" content="#0F1B33">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">Naseer Ahmad</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello">Hi, I'm</p>
+          <h1>Naseer Ahmad</h1>
+          <p class="hero-role">
+            <span id="typed" aria-live="off"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-sub">
+            Computer Science student who builds web apps, mobile apps and databases,
+            and is now learning SAP ABAP.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="code-bar"><i></i><i></i><i></i><span>naseer.js</span></div>
+<pre class="code-body"><span class="c-k">const</span> naseer = {
+  <span class="c-p">degree</span>: <span class="c-s">"BS Computer Science"</span>,
+  <span class="c-p">semester</span>: <span class="c-n">8</span>,
+  <span class="c-p">builds</span>: [<span class="c-s">"Web"</span>, <span class="c-s">"Flutter"</span>, <span class="c-s">"MySQL"</span>],
+  <span class="c-p">networking</span>: <span class="c-s">"Cisco certified"</span>,
+  <span class="c-p">learning</span>: <span class="c-s">"SAP ABAP"</span>
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <!-- Put your photo in this folder and name it profile.jpg -->
+            <img src="images/profile.jpg" alt="Portrait of Naseer Ahmad" id="profileImg" width="400" height="480">
+            <div class="photo-fallback" id="photoFallback" aria-hidden="true">NA</div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2>About me</h2>
+          <p>
+            My name is Naseer Ahmad. I am a student in the 8th semester of BS Computer Science,
+            and I enjoy turning ideas into working software.
+          </p>
+          <p>
+            I build websites and web applications, design databases in MySQL, and solve problems
+            with data structures and algorithms. I also develop mobile apps with Flutter, and I
+            have studied networking through Cisco Networking Academy.
+          </p>
+          <p>
+            Right now I am learning SAP ABAP development so I can build business applications.
+          </p>
+
+          <ul class="facts">
+            <li><strong>8th</strong> semester</li>
+            <li><strong>3</strong> Cisco certificates</li>
+            <li><strong>2</strong> SAP badges</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-intro">What I work with, and how comfortable I am with each.</p>
+
+        <div class="skills-grid">
+          <article class="skill">
+            <div class="skill-head"><h3>Web Development</h3><span>85%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Web Development 85%"><div class="bar-fill" data-level="85"></div></div>
+            <p>HTML, CSS, JavaScript and responsive layouts.</p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-head"><h3>Databases (MySQL)</h3><span>80%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL 80%"><div class="bar-fill" data-level="80"></div></div>
+            <p>Schema design, queries, joins and normalization.</p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-head"><h3>Data Structures &amp; Algorithms</h3><span>80%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="DSA 80%"><div class="bar-fill" data-level="80"></div></div>
+            <p>Problem solving with arrays, trees, graphs and sorting.</p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-head"><h3>Mobile Development</h3><span>75%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Mobile Development 75%"><div class="bar-fill" data-level="75"></div></div>
+            <p>Building apps for Android and iOS.</p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-head"><h3>Flutter</h3><span>75%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter 75%"><div class="bar-fill" data-level="75"></div></div>
+            <p>Dart, widgets and state management.</p>
+          </article>
+
+          <article class="skill">
+            <div class="skill-head"><h3>Networking</h3><span>70%</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Networking 70%"><div class="bar-fill" data-level="70"></div></div>
+            <p>Network basics, devices, configuration and IoT.</p>
+          </article>
+
+          <article class="skill skill-learning">
+            <div class="skill-head"><h3>SAP ABAP</h3><span>Learning</span></div>
+            <div class="bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="SAP ABAP, currently learning"><div class="bar-fill" data-level="35"></div></div>
+            <p>Currently learning to build business applications.</p>
+          </article>
+        </div>
+
+        <!-- Certificates and badges -->
+        <h3 class="sub-title" id="certs">Certificates and badges</h3>
+        <p class="section-intro">Click any item to view it full size.</p>
+
+        <div class="cert-grid">
+          <button class="cert" data-full="Certificates/networking-basics.png" data-title="Networking Basics" type="button">
+            <img src="Certificates/networking-basics.png" alt="Networking Basics certificate, Cisco Networking Academy" loading="lazy">
+            <span class="cert-info"><strong>Networking Basics</strong><small>Cisco Networking Academy, Oct 2025</small></span>
+          </button>
+
+          <button class="cert" data-full="Certificates/networking-devices.png" data-title="Networking Devices and Initial Configuration" type="button">
+            <img src="Certificates/networking-devices.png" alt="Networking Devices and Initial Configuration certificate, Cisco Networking Academy" loading="lazy">
+            <span class="cert-info"><strong>Networking Devices and Initial Configuration</strong><small>Cisco Networking Academy, Jan 2026</small></span>
+          </button>
+
+          <button class="cert" data-full="Certificates/intro-iot.png" data-title="Introduction to IoT and Digital Transformation" type="button">
+            <img src="Certificates/intro-iot.png" alt="Introduction to IoT and Digital Transformation certificate, Cisco Networking Academy" loading="lazy">
+            <span class="cert-info"><strong>Introduction to IoT and Digital Transformation</strong><small>Cisco Networking Academy, Jan 2026</small></span>
+          </button>
+
+          <button class="cert cert-badge" data-full="Certificates/sap-abap-badge.png" data-title="Introducing SAP ABAP Platform Fundamentals" type="button">
+            <img src="Certificates/sap-abap-badge.png" alt="Introducing SAP ABAP Platform Fundamentals badge" loading="lazy">
+            <span class="cert-info"><strong>Introducing SAP ABAP Platform Fundamentals</strong><small>SAP, beginner level</small></span>
+          </button>
+
+          <button class="cert cert-badge" data-full="Certificates/sap-joule-badge.png" data-title="Introducing Joule Studio" type="button">
+            <img src="Certificates/sap-joule-badge.png" alt="Introducing Joule Studio badge" loading="lazy">
+            <span class="cert-info"><strong>Introducing Joule Studio</strong><small>SAP, beginner level</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">AnchorFile, a Flutter app for sharing files between devices. Here are its Windows and Android screens.</p>
+
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-img">
+              <img src="images/anchorfile-windows.svg" alt="AnchorFile Windows screen listing nearby devices on the network" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>AnchorFile: Windows screen</h3>
+              <p>
+                This is the Windows screen of the AnchorFile project, made in Flutter. The app is
+                built to share files and folders between Android and Windows devices. It works on a
+                local network, so both devices must be on the same network, such as a router or a hotspot.
+              </p>
+              <ul class="tags">
+                <li>Flutter</li><li>Dart</li><li>Windows</li><li>Local network</li>
+              </ul>
+              <a href="#" class="project-link" target="_blank" rel="noopener">View source code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-img">
+              <img src="images/anchorfile-android.svg" alt="AnchorFile Android screen listing nearby devices on the network" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>AnchorFile: Android screen</h3>
+              <p>
+                This is the Android screen of the AnchorFile project, made in Flutter. It lists the
+                devices found on the same network, such as a router or a hotspot, so you can tap one
+                to connect and share files and folders with Android and Windows devices.
+              </p>
+              <ul class="tags">
+                <li>Flutter</li><li>Dart</li><li>Android</li><li>Local network</li>
+              </ul>
+              <a href="#" class="project-link" target="_blank" rel="noopener">View source code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-text">
+          <h2>Contact</h2>
+          <p>
+            Have an internship, project or question in mind? Send me a message and I will
+            reply as soon as I can.
+          </p>
+
+          <div class="socials" aria-label="Social media">
+            <a href="#" class="social" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="Email" id="emailLink">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5L12 12.2 19.8 6H4.2zM20 7.9l-7.38 5.86a1 1 0 0 1-1.24 0L4 7.9V18h16V7.9z"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.9 6.99c0 5.45-4.44 9.88-9.91 9.88zM20.52 3.45A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.46z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Naseer Ahmad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Certificate viewer -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-box" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img src="" alt="" id="lightboxImg">
+      <p id="lightboxTitle"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
